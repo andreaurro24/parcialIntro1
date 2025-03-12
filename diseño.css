@@ -7,6 +7,7 @@ body {
     color: #333;
 }
 
+/* Estilos del encabezado */
 header {
     background: linear-gradient(90deg, #67B26F, #4ca2cd);
     padding: 20px;
@@ -14,9 +15,10 @@ header {
     color: white;
 }
 
+/* Navegación */
 nav ul {
     list-style: none;
-    padding: 0;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -30,8 +32,14 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+    color: #67B26F;
+}
+
+/* Contenido principal */
 main {
     padding: 20px;
     max-width: 1200px;
@@ -46,28 +54,16 @@ section {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos de títulos */
 h2 {
     border-bottom: 3px solid #4ca2cd;
     padding-bottom: 5px;
     color: #333;
 }
 
-/* Sección de Inspiración */
-#inspiracion {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-}
-
-article {
-    background: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 h3 {
     color: #67B26F;
+    font-size: 1.4em;
     margin-bottom: 10px;
     border-left: 4px solid #67B26F;
     padding-left: 10px;
@@ -75,37 +71,25 @@ h3 {
 
 h4 {
     color: #4ca2cd;
+    font-size: 1.2em;
 }
 
 ol, ul {
     padding-left: 20px;
 }
 
-/* Estilo para los perfiles y guías */
-.perfil, .guia {
-    background: #e3f2fd;
+/* Sección de Inspiración */
+#inspiracion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+article {
+    background: #fff;
     padding: 15px;
-    border-left: 5px solid #4ca2cd;
-    margin-bottom: 15px;
-    border-radius: 5px;
-}
-
-/* Sección de Inmersión */
-.mapa img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-}
-
-.fotos img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
     border-radius: 8px;
-}
+    box-shadow: 0px 2px 4px }
 
 /* Integrantes del equipo */
 .miembro {
@@ -126,10 +110,29 @@ ol, ul {
     margin: auto;
 }
 
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #4ca2cd;
-    color: white;
-    margin-top: 20px;
+/* Sección de Inmersión */
+.mapa img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
 }
+
+
+.fotosHistorias {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 15px 0; 
+}
+
+
+.fotosHistorias img {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 10%; 
+    object-fit: cover; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
