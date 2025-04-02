@@ -145,3 +145,11 @@ article {
     margin: auto;
     border-radius: 10px;
 }
+
+.foto-lluvia img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px; 
+}
