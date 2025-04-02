@@ -147,7 +147,7 @@ article {
 }
 
 .foto-lluvia img {
-    max-width: 70%;
+    max-width: 200px;
     height: auto;
     display: block;
     margin: auto;
