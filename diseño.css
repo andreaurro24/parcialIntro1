@@ -7,7 +7,7 @@ body {
     color: #333;
 }
 
-/* Estilos del encabezado */
+/* Encabezado */
 header {
     background: linear-gradient(90deg, #67B26F, #4ca2cd);
     padding: 20px;
@@ -54,7 +54,7 @@ section {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos de títulos */
+/* Tipografía */
 h2 {
     border-bottom: 3px solid #4ca2cd;
     padding-bottom: 5px;
@@ -74,28 +74,39 @@ h4 {
     font-size: 1.2em;
 }
 
+/* Listas */
 ol, ul {
     padding-left: 20px;
 }
 
 /* Sección de Inspiración */
 #inspiracion {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en una sola columna */
+    gap: 20px; /* Espaciado entre artículos */
 }
 
 article {
     background: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0px 2px 4px }
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-/* Integrantes del equipo */
+/* Responsividad */
+@media (min-width: 768px) {
+    #inspiracion {
+        max-width: 800px;
+        margin: auto;
+    }
+}
+
+/* Equipo */
 .miembro {
     text-align: center;
     margin-top: 20px;
 }
+
 .miembro img {
     width: 120px;
     height: 120px;
@@ -103,6 +114,7 @@ article {
     object-fit: cover;
 }
 
+/* Galería de fotos */
 .fotos img {
     width: 100%;
     max-width: 300px;
@@ -110,7 +122,22 @@ article {
     margin: auto;
 }
 
-/* Sección de Inmersión */
+.fotosHistorias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.fotosHistorias img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    object-fit: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mapa */
 .mapa img {
     max-width: 100%;
     height: auto;
@@ -118,21 +145,3 @@ article {
     margin: auto;
     border-radius: 10px;
 }
-
-
-.fotosHistorias {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin: 15px 0; 
-}
-
-
-.fotosHistorias img {
-    width: 120px; 
-    height: 120px; 
-    border-radius: 10%; 
-    object-fit: cover; 
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
-}
-
