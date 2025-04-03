@@ -13,15 +13,25 @@ header {
     padding: 20px;
     text-align: center;
     color: white;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Navegación */
+nav {
+    width: 100%;
+  
+    padding: 10px 0;
+}
+
 nav ul {
     list-style: none;
-    padding: 10px 20px;
+    padding: 0;
+    margin: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -39,43 +49,36 @@ nav ul li a:hover {
     color: #67B26F;
 }
 
-/* Contenedor principal para mantener el mismo ancho */
+/* Contenedor principal */
 main {
-    max-width: 1200px; /* Ajusta según el diseño */
+    max-width: 1200px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-/* Secciones con mismo tamaño */
+/* Secciones generales */
 section {
     width: 100%;
-    max-width: 1200px; /* Asegura que todas las secciones tengan el mismo ancho */
+    max-width: 1200px;
     background: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    min-height: 300px; /* Ajusta según sea necesario */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-/* Sección de Inspiración con mismo ancho */
-#inspiracion {
+/* Sección de Inspiración */
+#inspiracion, #ideacion {
     width: 100%;
     max-width: 1200px;
+    text-align: center;
 }
-
-/* Asegurar que los artículos dentro de Inspiración también tengan el mismo ancho */
-#inspiracion article {
-    width: 100%;
-}
-
 
 /* Tipografía */
 h2 {
@@ -102,37 +105,15 @@ ol, ul {
     padding-left: 20px;
 }
 
-
-
+/* Artículos */
 article {
     background: #fff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
-
-/* Responsividad */
-@media (min-width: 768px) {
-    #inspiracion {
-        max-width: 800px;
-        margin: auto;
-    }
-}
-
-@media (min-width: 768px) {
-    #ideacion {
-        max-width: 800px;
-        margin: auto;
-    }
-}
-
-@media (min-width: 768px) {
-    #header {
-        max-width: 800px;
-        margin: auto;
-    }
-}
-
 
 /* Equipo */
 .miembro {
@@ -155,10 +136,12 @@ article {
     margin: auto;
 }
 
+/* Imágenes en Storyboard */
 .fotosHistorias {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin: 15px 0;
 }
 
@@ -179,19 +162,76 @@ article {
     border-radius: 10px;
 }
 
-.foto-lluvia img {
+/* Otras imágenes */
+.foto-lluvia img, .storyboard-img img {
     max-width: 300px;
     height: auto;
     display: block;
     margin: auto;
-    border-radius: 10px; 
-
+    border-radius: 10px;
 }
 
-.storyboard-img img {
-    max-width: 200px;
-    height: auto;
-    display: block;
-    margin: auto;
-    border-radius: 10px;
+/* -------------------- RESPONSIVE DESIGN -------------------- */
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    main {
+        padding: 10px;
+    }
+    
+    section {
+        padding: 15px;
+    }
+}
+
+/* Modo móvil */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 10px;
+        min-height: auto;
+    }
+
+    .miembro img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fotosHistorias img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .miembro img {
+        width: 80px;
+        height: 80px;
+    }
 }
