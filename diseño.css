@@ -79,12 +79,7 @@ ol, ul {
     padding-left: 20px;
 }
 
-/* Sección de Inspiración */
-#inspiracion {
-    display: flex;
-    flex-direction: column; /* Asegura que los elementos estén en una sola columna */
-    gap: 20px; /* Espaciado entre artículos */
-}
+
 
 article {
     background: #fff;
@@ -99,6 +94,16 @@ article {
         max-width: 800px;
         margin: auto;
     }
+    #ideacion {
+        max-width: 800px;
+        margin: auto;
+    }
+    #header {
+        max-width: 800px;
+        margin: auto;
+    }
+
+
 }
 
 /* Equipo */
@@ -147,9 +152,18 @@ article {
 }
 
 .foto-lluvia img {
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
     display: block;
     margin: auto;
     border-radius: 10px; 
+
+}
+
+.storyboard-img img {
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
 }
