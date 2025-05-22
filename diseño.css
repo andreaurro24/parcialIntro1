@@ -1,3 +1,10 @@
+/* Reset y box-sizing global */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 /* Diseño general */
 body {
     font-family: 'Poppins', sans-serif;
@@ -14,13 +21,11 @@ header {
     text-align: center;
     color: white;
     width: 100%;
-    box-sizing: border-box;
 }
 
 /* Navegación */
 nav {
     width: 100%;
-  
     padding: 10px 0;
 }
 
@@ -32,10 +37,6 @@ nav ul {
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
-}
-
-nav ul li {
-    display: inline;
 }
 
 nav ul li a {
@@ -53,30 +54,20 @@ nav ul li a:hover {
 main {
     max-width: 1200px;
     margin: auto;
-    width: 100%;
     padding: 20px;
-    box-sizing: border-box;
 }
 
 /* Secciones generales */
 section {
     width: 100%;
-    max-width: 1200px;
     background: white;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-}
-
-/* Sección de Inspiración */
-#inspiracion, #ideacion {
-    width: 100%;
-    max-width: 1200px;
     text-align: center;
 }
 
@@ -110,9 +101,8 @@ article {
     background: #fff;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    box-sizing: border-box;
 }
 
 /* Equipo */
@@ -163,7 +153,7 @@ article {
 }
 
 /* Otras imágenes */
-.foto-lluvia img, .storyboard-img img {
+.foto-lluvia img, .storyboard-img,.prototipoimg, .evidenciaimg, .evidencia-img .pc-img, .modelo-img, .cronograma-img img {
     max-width: 300px;
     height: auto;
     display: block;
@@ -173,18 +163,16 @@ article {
 
 /* -------------------- RESPONSIVE DESIGN -------------------- */
 
-/* Ajustes para pantallas más pequeñas */
 @media (max-width: 1024px) {
     main {
         padding: 10px;
     }
-    
+
     section {
         padding: 15px;
     }
 }
 
-/* Modo móvil */
 @media (max-width: 768px) {
     header {
         padding: 15px;
@@ -202,7 +190,6 @@ article {
 
     section {
         padding: 10px;
-        min-height: auto;
     }
 
     .miembro img {
@@ -211,6 +198,27 @@ article {
     }
 
     .fotosHistorias img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .mapa img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .foto-lluvia img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .storyboard-img img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+     .pc-img  img {
         width: 100px;
         height: 100px;
     }
