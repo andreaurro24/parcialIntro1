@@ -152,13 +152,13 @@ article {
     border-radius: 10px;
 }
 
-/* Otras imágenes */
-/* Imágenes en secciones específicas */
+
 .storyboard-img img,
 .prototipoimg img,
 .evidenciaimg img,
 .evidencia-img img,
 .pc-img img,
+.foto-lluvia img, 
 .modelo-img img,
 .cronograma-img img {
     max-width: 300px;
