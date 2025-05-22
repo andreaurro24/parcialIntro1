@@ -153,13 +153,22 @@ article {
 }
 
 /* Otras imágenes */
-.foto-lluvia img, .storyboard-img,.prototipoimg, .evidenciaimg, .evidencia-img .pc-img, .modelo-img, .cronograma-img img {
+/* Imágenes en secciones específicas */
+.storyboard-img img,
+.prototipoimg img,
+.evidenciaimg img,
+.evidencia-img img,
+.pc-img img,
+.modelo-img img,
+.cronograma-img img {
     max-width: 300px;
+    width: 100%;
     height: auto;
     display: block;
-    margin: auto;
+    margin: 15px auto;
     border-radius: 10px;
 }
+
 
 /* -------------------- RESPONSIVE DESIGN -------------------- */
 
